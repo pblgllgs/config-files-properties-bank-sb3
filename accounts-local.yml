@@ -14,12 +14,9 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-<<<<<<< HEAD
 
 management:
   endpoints:
     web:
       exposure:
         include: '*'
-=======
->>>>>>> 75bfce1b74a0e3e8d01df857ebb3a2fb3e40975b
