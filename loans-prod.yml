@@ -2,7 +2,7 @@ spring:
   application:
     name: loans
   datasource:
-    url: jdbc:mysql://mysql_db_loans:3307/db_loans
+    url: jdbc:mysql://mysql_db_loans:3306/db_loans
     username: root
     password: password
   jpa:
