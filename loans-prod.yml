@@ -15,11 +15,9 @@ spring:
     hibernate:
       ddl-auto: update
     database: postgresql
-  rabbitmq:
-    host: rabbitmq
-    port: 5672
-    username: guest
-    password: guest
+  sql:
+    init:
+      mode: always
 
 management:
   endpoints:
