@@ -5,7 +5,6 @@ spring:
     url: jdbc:mysql://mysql_db_loans:3306/db_loans
     username: root
     password: password
-    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
