@@ -20,7 +20,7 @@ spring:
     username: guest
     password: guest
 
-message: hello
+message: hello, update busrefresh
 
 management:
   endpoints:
