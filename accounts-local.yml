@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
-    username: sa
+    username: {cipher}4dce69a3aaa134044da57e807ea619ed5b6436498da63291bd162c52c017b2ad
     password:
   h2:
     console:
@@ -14,9 +14,12 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+<<<<<<< HEAD
 
 management:
   endpoints:
     web:
       exposure:
         include: '*'
+=======
+>>>>>>> 75bfce1b74a0e3e8d01df857ebb3a2fb3e40975b
