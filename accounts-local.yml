@@ -20,6 +20,8 @@ spring:
     username: guest
     password: guest
 
+message: hello
+
 management:
   endpoints:
     web:
