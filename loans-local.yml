@@ -2,18 +2,19 @@ spring:
   application:
     name: loans
   datasource:
-    url: jdbc:h2:mem:testdb
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
-  h2:
-    console:
-      enabled: true
+    url: jdbc:postgresql://localhost:5431/db_loans
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        show_sql: true
     hibernate:
       ddl-auto: update
-    show-sql: true
+    database: postgresql
   rabbitmq:
     host: localhost
     port: 5672
