@@ -34,3 +34,9 @@ info:
     name: gatewayserver
     description: mvsvc gatewayserver
     version: v2
+
+logging:
+  level:
+    com:
+      pblgllgs:
+        gatewayserver: DEBUG
