@@ -1,3 +1,5 @@
+server:
+  port: 8072
 management:
   info:
     env:
@@ -15,6 +17,8 @@ management:
     health:
       probes:
         enabled: true
+    gateway:
+      enabled: true
 
 eureka:
   instance:
@@ -23,7 +27,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     serviceUrl:
-      defaultZone: http://localhost:8070/eureka/
+      defaultZone: http://eurekaserver:8070/eureka/
 
 info:
   app:
