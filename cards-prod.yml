@@ -48,3 +48,9 @@ info:
     name: cards
     description: mvsvc cards
     version: v2
+
+logging:
+  level:
+    com:
+      pblgllgs:
+        cards: DEBUG

@@ -50,3 +50,9 @@ info:
     name: accounts
     description: mvsvc accounts
     version: v2
+
+logging:
+  level:
+    com:
+      pblgllgs:
+        accounts: DEBUG

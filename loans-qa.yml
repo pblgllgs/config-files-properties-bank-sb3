@@ -48,3 +48,9 @@ info:
     name: loans
     description: mvsvc loans
     version: v2
+
+logging:
+  level:
+    com:
+      pblgllgs:
+        loans: DEBUG
