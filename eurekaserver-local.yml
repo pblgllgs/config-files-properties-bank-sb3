@@ -20,12 +20,12 @@ management:
 
 eureka:
   instance:
-    preferIpAddress: true
+    hostname: localhost
   client:
-    fetch-registry: true
-    register-with-eureka: true
+    fetch-registry: false
+    register-with-eureka: false
     serviceUrl:
-      defaultZone: http://localhost:8070/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 info:
   app:
