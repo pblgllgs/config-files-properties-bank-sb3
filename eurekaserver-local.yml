@@ -1,3 +1,5 @@
+server:
+  port: 8070
 management:
   info:
     env:
