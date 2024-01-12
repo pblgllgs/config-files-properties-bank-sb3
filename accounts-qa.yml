@@ -61,6 +61,18 @@ logging:
       pblgllgs:
         accounts: DEBUG
 
+build:
+  version: "3.0"
+
+accounts:
+  message: "accounts related local APIs "
+  contactDetails:
+    name: "pblgllgs - Developer"
+    email: "pblgllgs@gmail.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
+
 resilience4j:
   circuitbreaker:
     configs:
@@ -77,15 +89,14 @@ resilience4j.retry:
       waitDuration: 500
       enableExponentialBackoff: true
       exponentialBackoffMultiplier: 2
+      ignoreExceptions:
+        - java.lang.NullPointerException
+      retryExceptions:
+        - java.util.concurrent.TimeoutException
 
-build:
-  version: "3.0"
-
-accounts:
-  message: "Welcome to EazyBank accounts related local APIs "
-  contactDetails:
-    name: "John Doe - Developer"
-    email: "john@eazybank.com"
-  onCallSupport:
-    - (555) 555-1234
-    - (555) 523-1345
+resilience4j.ratelimiter:
+  configs:
+    default:
+      timeoutDuration: 1000
+      limitRefreshPeriod: 5000
+      limitForPeriod: 1
