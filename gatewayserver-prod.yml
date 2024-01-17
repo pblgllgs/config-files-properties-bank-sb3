@@ -14,7 +14,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        include: "*"
   health:
     readinessstate:
       enabled: true
@@ -26,6 +26,9 @@ management:
         enabled: true
     gateway:
       enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 
 eureka:
   instance:
