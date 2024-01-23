@@ -71,6 +71,8 @@ logging:
     com:
       pblgllgs:
         accounts: DEBUG
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
 
 build:
   version: "3.0"
