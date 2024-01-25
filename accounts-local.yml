@@ -7,6 +7,8 @@ spring:
       definition: updateCommunication
     stream:
       bindings:
+        updateCommunication-in-0:
+          destination: communication-sent
         sendCommunication-out-0:
           destination: send-communication
   rabbitmq:
