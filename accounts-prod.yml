@@ -13,7 +13,7 @@ spring:
         sendCommunication-out-0:
           destination: send-communication
   rabbitmq:
-    host: rabbitmq
+    host: rabbit
     port: 5672
     username: guest
     password: guest
