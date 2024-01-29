@@ -30,15 +30,6 @@ management:
     tags:
       application: ${spring.application.name}
 
-eureka:
-  instance:
-    preferIpAddress: true
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    serviceUrl:
-      defaultZone: http://eurekaserver:8070/eureka/
-
 info:
   app:
     name: gatewayserver
